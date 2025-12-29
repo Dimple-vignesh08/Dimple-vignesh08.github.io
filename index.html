@@ -8,46 +8,57 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f8;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f7fb;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 1.1rem;
+      opacity: 0.9;
     }
 
     section {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 35px 20px;
     }
 
     h2 {
       color: #0f172a;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 6px;
+      margin-top: 40px;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+      font-size: 1.4rem;
     }
 
     .card {
-      background: #ffffff;
-      padding: 20px;
+      background: white;
+      padding: 22px;
       margin-top: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.08);
     }
 
     a {
@@ -56,13 +67,26 @@
       font-weight: 500;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background-color: #0f172a;
-      color: white;
+      color: #cbd5e1;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 22px;
+      margin-top: 50px;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+      section {
+        padding: 25px 15px;
+      }
     }
   </style>
 </head>
@@ -141,7 +165,8 @@
   <h2>Contact</h2>
   <div class="card">
     <p>
-      📧 Email: <a href="mailto:vIgneshdimpul@gmail.com">vIgneshdimpul@gmail.com</a>
+      📧 Email:
+      <a href="mailto:vIgneshdimpul@gmail.com">vIgneshdimpul@gmail.com</a>
     </p>
   </div>
 
@@ -153,4 +178,5 @@
 
 </body>
 </html>
+
 
